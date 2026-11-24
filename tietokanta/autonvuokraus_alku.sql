@@ -84,3 +84,25 @@ INSERT INTO sopimus (asiakasid, autoid, aloituspvm, lopetuspvm, palautettu) VALU
 
 -- TEE ITSE: lisää 6 autoa, 5 asiakasta ja 3 vuokrausta lisää.
 -- Muista: avoimessa vuokrauksessa palautettu on NULL ja auton onkovapaa on 0.
+
+INSERT INTO auto (rekno, valmistaja, malli, onkoautomaatti, moottori, istumapaikat, hinta, onkovapaa) VALUES
+('DEF-224', 'Volkswagen', 'Golf', 0, 'diesel', 5, 89.00, 0),           -- vuokrattu
+('GHI-135', 'Skoda', 'Octavia', 0, 'bensa', 5, 95.00, 1),              -- vapaa
+('JKL-446', 'Tesla', 'Model 3', 1, 'sähkö', 5, 149.00, 1),             -- vapaa
+('MNO-557', 'Ford', 'Transit Custom', 0, 'diesel', 9, 129.00, 0),      -- vuokrattu
+('PQR-668', 'Kia', 'Ceed', 0, 'hybridi', 5, 92.00, 1),                 -- vapaa
+('STU-779', 'Volvo', 'XC60', 1, 'hybridi', 5, 139.00, 1);              -- vapaa
+
+
+INSERT INTO asiakas (etunimi, sukunimi, katuosoite, postitoimipaikka, puhelin, saika, email) VALUES
+('Matti', 'Virtanen', 'Mannerheimintie 42 B 12', '00250 Helsinki', '0401112233', '1990-03-15', 'matti.virtanen@example.com'),
+('Aino', 'Korhonen', 'Hämeenkatu 8', '33100 Tampere', '0452223344', '1985-07-22', 'aino.korhonen@example.com'),
+('Jussi', 'Nieminen', 'Satamakatu 5 C 7', '20100 Turku', '0503334455', '1978-12-01', 'jussi.nieminen@example.com'),
+('Elina', 'Mäkelä', 'Kauppakatu 19', '40100 Jyväskylä', '0414445566', '1999-05-30', 'elina.makela@example.com'),
+('Pekka', 'Laine', 'Torikatu 3 A 1', '90100 Oulu', '0405556677', '1969-09-18', 'pekka.laine@example.com');
+
+
+INSERT INTO sopimus (asiakasid, autoid, aloituspvm, lopetuspvm, palautettu) VALUES
+(2, 2, '2026-11-20', '2026-11-27', NULL),
+(3, 5, '2026-11-22', '2026-11-26', NULL),
+(4, 3, '2026-11-10', '2026-11-14', '2026-11-14');
