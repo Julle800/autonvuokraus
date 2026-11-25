@@ -20,6 +20,7 @@ require_once('php/db.php');
         <li><a href="php/lisaa_asiakas.php">Lisää asiakas </a></li>
         <h2>Vuokraukset</h2>
         <li><a href="php/katsele_vuokrauksia.php">Katsele vuokrauksia </a></li>
+        <li><a href="php/lisaa_vuokraus.php">Lisää vuokraus </a></li>
         <!-- TEE: linkit muille sivuille, kun ne on tehty -->
     </ul>
 </body>
