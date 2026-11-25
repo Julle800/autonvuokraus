@@ -15,6 +15,7 @@ require_once('php/db.php');
     <ul>
         <li><a href="php/katsele_autoja.php">Katsele autoja</a></li>
         <li><a href="php/katsele_asiakkaita.php">Katsele asiakkaita</a></li>
+        <li><a href="php/lisaa_asiakas.php">Lisää asiakas </a></li>
         <!-- TEE: linkit muille sivuille, kun ne on tehty -->
     </ul>
 </body>

@@ -124,21 +124,6 @@ input[type="submit"]:hover {
     }
 }
 
-/* Vesileima */
-body::after {
-    content: "Local Note: this is a school project only !!!";
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 36px;  /* Isompi fontti */
-    color: rgb(255, 255, 255);  /* Punainen väri, vähemmän läpikuultava */
-    font-weight: bold;
-    z-index: -1;
-    text-transform: uppercase;  /* Isot kirjaimet */
-}
-
 /* Viestit (onnistumiset ja virheet) */
 .viesti {
     background-color: #e6f4e6;

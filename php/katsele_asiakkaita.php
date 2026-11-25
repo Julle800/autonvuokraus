@@ -31,7 +31,7 @@ $tulos = mysqli_query($yhteys, $sql);
         <td><?= date('d.m.Y', strtotime($rivi['saika'])) ?></td>
         <td><?= htmlspecialchars($rivi["katuosoite"]) ?></td>
         <td><?= htmlspecialchars($rivi["postitoimipaikka"]) ?></td>
-        <td><?= number_format($rivi["puhelin"]) ?></td>
+        <td><?= htmlspecialchars($rivi["puhelin"]) ?></td>
         <td><?= htmlspecialchars($rivi["email"]) ?></td>
         <!-- TEE: osoite, puhelin ja sähköposti -->
     </tr>
