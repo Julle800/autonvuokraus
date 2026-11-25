@@ -3,20 +3,21 @@ require_once('db.php');
 $sql = "SELECT * FROM auto";          // TEE: mitä haetaan, esim. *
 $tulos = mysqli_query($yhteys, $sql);
 ?>
+
 <!-- HTML-osa: <html>, <head> ja linkki tyyleihin kuten etusivulla -->
 <!DOCTYPE html>
 <html lang="fi">
 <head>
     <title>Autonvuokraus</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <h1>Autot</h1>
     <p><a href="../index.php">Etusivulle</a></p>
 
-    <table border="1">
+    <table>
         <tr>
             <th>Kuva</th>
             <th>Rekisterinumero</th>
