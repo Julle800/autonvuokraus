@@ -31,7 +31,7 @@ $tulos = mysqli_query($yhteys, $sql);
         </tr>
     <?php while ($rivi = mysqli_fetch_assoc($tulos)) { ?>
         <tr>
-            <td><img src="../images/<?= htmlspecialchars($rivi['malli']) ?>.png" width="100"></td>
+            <td><img src="../images/<?= htmlspecialchars($rivi['malli']) ?>.jpg" width="100"></td>
             <td><?= htmlspecialchars($rivi['rekno']) ?></td>
             <td><?= htmlspecialchars($rivi['valmistaja']) ?></td>
             <td><?= htmlspecialchars($rivi['malli']) ?></td>
